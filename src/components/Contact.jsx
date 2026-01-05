@@ -23,7 +23,7 @@ const Contact = () => {
     
     // Using Formspree endpoint - Replace 'YOUR_FORM_ID' with your actual Formspree form ID
     // Get your form ID from https://formspree.io/ after creating a free account
-    const formspreeEndpoint = 'https://formspree.io/f/YOUR_FORM_ID'
+    const formspreeEndpoint = 'https://formspree.io/f/mzdzwvrg'
     
     try {
       const response = await fetch(formspreeEndpoint, {
