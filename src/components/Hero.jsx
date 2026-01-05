@@ -79,8 +79,6 @@ const Hero = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 1.2, duration: 0.8 }}
           >
-            <a href="tel:+17372290094" className="contact-link">+1 (737) 229-0094</a>
-            <span className="separator"> • </span>
             <a href="mailto:susmithavg00@gmail.com" className="contact-link">susmithavg00@gmail.com</a>
             <span className="separator"> • </span>
             <a href="https://linkedin.com/in/susmitha-vadlakonda" target="_blank" rel="noopener noreferrer" className="contact-link">

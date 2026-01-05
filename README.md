@@ -116,7 +116,6 @@ This project is open source and available under the MIT License.
 
 **Susmitha Vadlakonda**
 - Email: susmithavg00@gmail.com
-- Phone: +1 (737) 229-0094
 - LinkedIn: [Connect with me](https://linkedin.com/in/susmitha-vadlakonda)
 
 ---
