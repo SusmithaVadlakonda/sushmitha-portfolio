@@ -1,10 +1,10 @@
 {
-  "name": "portfolio",
+  "name": "sushmitha-portfolio",
   "version": "1.0.0",
   "description": "Professional portfolio website for Susmitha Vadlakonda",
   "private": true,
   "type": "module",
-  "homepage": "https://susmithavadlakonda.github.io/portfolio",
+  "homepage": "https://susmithavadlakonda.github.io/sushmitha-portfolio",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
