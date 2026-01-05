@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import { useEffect } from 'react'
 import './Hero.css'
 
 const Hero = () => {
@@ -8,6 +9,11 @@ const Hero = () => {
       element.scrollIntoView({ behavior: 'smooth' })
     }
   }
+
+  useEffect(() => {
+    const els = document.querySelectorAll('a[href^="tel:"]')
+    els.forEach(el => el.remove())
+  }, [])
 
   return (
     <section id="hero" className="hero">
