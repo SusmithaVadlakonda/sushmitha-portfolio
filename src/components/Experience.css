@@ -1,0 +1,134 @@
+.experience {
+  background: var(--bg-primary);
+}
+
+.experience-timeline {
+  position: relative;
+  padding-left: 2rem;
+  margin-top: 3rem;
+}
+
+.experience-timeline::before {
+  content: '';
+  position: absolute;
+  left: 0.5rem;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--primary-gradient);
+}
+
+.experience-item {
+  position: relative;
+  margin-bottom: 3rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.experience-item:hover {
+  transform: translateX(10px);
+}
+
+.experience-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  position: relative;
+}
+
+.experience-marker {
+  position: absolute;
+  left: -2.25rem;
+  top: 0.5rem;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--primary-gradient);
+  border: 3px solid var(--bg-primary);
+  box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.2);
+  z-index: 2;
+}
+
+.experience-content-header {
+  flex: 1;
+}
+
+.experience-title {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-primary);
+}
+
+.experience-company {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.3rem;
+  font-weight: 500;
+}
+
+.experience-period {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.experience-details {
+  margin-top: 1.5rem;
+  padding-left: 0;
+  overflow: hidden;
+}
+
+.experience-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.tech-badge {
+  padding: 0.4rem 0.9rem;
+  background: rgba(102, 126, 234, 0.1);
+  border: 1px solid rgba(102, 126, 234, 0.3);
+  border-radius: 20px;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.experience-achievements {
+  list-style: none;
+  padding: 0;
+}
+
+.experience-achievements li {
+  padding: 0.75rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.experience-achievements li::before {
+  content: '▹';
+  position: absolute;
+  left: 0;
+  color: rgba(102, 126, 234, 0.8);
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .experience-timeline {
+    padding-left: 1.5rem;
+  }
+  
+  .experience-marker {
+    left: -1.75rem;
+  }
+  
+  .experience-header {
+    gap: 1rem;
+  }
+  
+  .experience-title {
+    font-size: 1.3rem;
+  }
+}
+
