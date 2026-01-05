@@ -3,14 +3,12 @@ import { motion, AnimatePresence } from 'framer-motion'
 import './Experience.css'
 
 const Experience = () => {
-  const [expandedIndex, setExpandedIndex] = useState(0)
-
   const experiences = [
     {
       title: 'Software Engineer',
-      company: 'Sai Teja Lovers Company',
+      company: '',
       period: 'Dec 2023 - Present',
-      location: '',
+      location: 'Intel Techworks',
       achievements: [
         'Led the migration of a critical data processing module to Java 17, resulting in a 20% performance improvement and 15% reduction in memory consumption.',
         'Optimized database queries and implemented caching strategies, resulting in a 15% reduction in average transaction processing time and improved application scalability to handle peak loads.',
@@ -36,6 +34,8 @@ const Experience = () => {
     }
   ]
 
+  const [expanded, setExpanded] = useState(() => experiences.map(() => true))
+
   return (
     <section id="experience" className="section experience">
       <div className="container">
@@ -55,12 +55,16 @@ const Experience = () => {
           {experiences.map((exp, index) => (
             <motion.div
               key={index}
-              className={`experience-item ${expandedIndex === index ? 'expanded' : ''}`}
+              className={`experience-item ${expanded[index] ? 'expanded' : ''}`}
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.2 }}
-              onClick={() => setExpandedIndex(expandedIndex === index ? -1 : index)}
+              onClick={() => setExpanded(prev => {
+                const next = [...prev]
+                next[index] = !next[index]
+                return next
+              })}
             >
               <div className="experience-header">
                 <div className="experience-marker"></div>
@@ -72,7 +76,7 @@ const Experience = () => {
               </div>
               
               <AnimatePresence>
-                {expandedIndex === index && (
+                {expanded[index] && (
                   <motion.div
                     className="experience-details"
                     initial={{ height: 0, opacity: 0 }}
