@@ -16,7 +16,7 @@ const Experience = () => {
         'Automated build and deployment workflows using Bamboo, Nexus, and Terraform, making releases faster and more reliable for the team. ',
         'Increased API throughput by 25% and reduced response time by refactoring a REST API with asynchronous processing, improving the experience for end users. '
       ],
-      tech: ['Java 17', 'Spring Boot', 'Docker', 'AWS EC2', 'Bamboo', 'Nexus', 'Terraform']
+      tech: ['Java 17', 'Spring Boot', 'Docker', 'AWS EC2', 'Bamboo', 'Nexus', 'Terraform', 'Microservices']
     },
     {
       title: 'Senior Software Engineer',
