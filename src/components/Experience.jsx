@@ -5,16 +5,16 @@ import './Experience.css'
 const Experience = () => {
   const experiences = [
     {
-      title: 'Software Engineer',
-      company: '',
-      period: 'Dec 2023 - Present',
-      location: 'Intel Techworks',
+      title: 'Software Engineer - University Systems',
+      company: 'Texas State University',
+      period: 'May 2024 - Present',
+      location: 'Onsite',
       achievements: [
-        'Led the migration of a critical data processing module to Java 17, resulting in a 20% performance improvement and 15% reduction in memory consumption.',
-        'Optimized database queries and implemented caching strategies, resulting in a 15% reduction in average transaction processing time and improved application scalability to handle peak loads.',
-        'Developed and deployed Spring Boot microservices in Docker containers on AWS EC2.',
-        'Implemented a CI/CD pipeline using Bamboo, Nexus, and Terraform, streamlining the release process and improving deployment frequency.',
-        'Redesigned a critical API endpoint using asynchronous processing, increasing throughput by 25%, and reducing latency for end-users.'
+        'Improved application performance by 20% and reduced memory usage by 15% by upgrading a core data-processing module to Java 17, improving stability of internal systems. ',
+        'Reduced transaction processing time by 15% by optimizing SQL queries and adding caching, helping the system handle high usage during peak academic periods. ',
+        'Built and deployed Spring Boot microservices using Docker and AWS EC2 to support internal university applications. ',
+        'Automated build and deployment workflows using Bamboo, Nexus, and Terraform, making releases faster and more reliable for the team. ',
+        'Increased API throughput by 25% and reduced response time by refactoring a REST API with asynchronous processing, improving the experience for end users. '
       ],
       tech: ['Java 17', 'Spring Boot', 'Docker', 'AWS EC2', 'Bamboo', 'Nexus', 'Terraform']
     },
@@ -22,7 +22,7 @@ const Experience = () => {
       title: 'Senior Software Engineer',
       company: 'Capgemini',
       period: 'Aug 2021 - Jul 2023',
-      location: '',
+      location: 'Onsite',
       achievements: [
         'Managed data systems processing 100M+ daily records using AWS Lambda, Glue, Kinesis, S3, and Snowflake',
         'Built REST APIs and ETL pipelines in Java and Kafka, improving data processing efficiency by 70%',
