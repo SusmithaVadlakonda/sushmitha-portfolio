@@ -98,7 +98,7 @@ const Contact = () => {
               <div>
                 <div className="contact-label">LinkedIn</div>
                 <a 
-                  href="https://linkedin.com/in/susmitha-vadlakonda" 
+                  href="https://www.linkedin.com/in/susmitha-vadlakonda/" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="contact-value"
